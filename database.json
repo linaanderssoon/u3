@@ -1,0 +1,356 @@
+{
+    "animals": [
+        {
+            "id": 1,
+            "animal": "Hyena, spotted",
+            "age": 5,
+            "favourite_food": "Latex Rubber Gloves Size 9",
+            "owner": 6
+        },
+        {
+            "id": 2,
+            "animal": "Owl, madagascar hawk",
+            "age": 6,
+            "favourite_food": "Salt And Pepper Mix - Black",
+            "owner": 14
+        },
+        {
+            "id": 3,
+            "animal": "Hawk-headed parrot",
+            "age": 7,
+            "favourite_food": "Bread - Calabrese Baguette",
+            "owner": 24
+        },
+        {
+            "id": 4,
+            "animal": "Gull, dusky",
+            "age": 10,
+            "favourite_food": "Wine - White, Ej Gallo",
+            "owner": 25
+        },
+        {
+            "id": 5,
+            "animal": "Stanley bustard",
+            "age": 12,
+            "favourite_food": "Cloves - Ground",
+            "owner": 20
+        },
+        {
+            "id": 6,
+            "animal": "Heron, boat-billed",
+            "age": 8,
+            "favourite_food": "White Baguette",
+            "owner": 1
+        },
+        {
+            "id": 7,
+            "animal": "Swallow-tail gull",
+            "age": 12,
+            "favourite_food": "Bar Nature Valley",
+            "owner": 1
+        },
+        {
+            "id": 8,
+            "animal": "White-throated robin",
+            "age": 2,
+            "favourite_food": "Juice - Grapefruit, 341 Ml",
+            "owner": 6
+        },
+        {
+            "id": 9,
+            "animal": "North American porcupine",
+            "age": 2,
+            "favourite_food": "Beer - Pilsner Urquell",
+            "owner": 15
+        },
+        {
+            "id": 10,
+            "animal": "Tammar wallaby",
+            "age": 11,
+            "favourite_food": "Crackers - Trio",
+            "owner": 15
+        },
+        {
+            "id": 11,
+            "animal": "Gecko (unidentified)",
+            "age": 1,
+            "favourite_food": "Cranberries - Fresh",
+            "owner": 13
+        },
+        {
+            "id": 12,
+            "animal": "Honey badger",
+            "age": 15,
+            "favourite_food": "Sauce - Mint",
+            "owner": 23
+        },
+        {
+            "id": 13,
+            "animal": "Rhesus macaque",
+            "age": 11,
+            "favourite_food": "Cookies - Oreo, 4 Pack",
+            "owner": 14
+        },
+        {
+            "id": 14,
+            "animal": "Vulture, king",
+            "age": 6,
+            "favourite_food": "Bread - Pita",
+            "owner": 6
+        },
+        {
+            "id": 15,
+            "animal": "Chestnut weaver",
+            "age": 3,
+            "favourite_food": "Mushroom - Porcini Frozen",
+            "owner": 4
+        },
+        {
+            "id": 16,
+            "animal": "African skink",
+            "age": 7,
+            "favourite_food": "Cheese - Bakers Cream Cheese",
+            "owner": 7
+        },
+        {
+            "id": 17,
+            "animal": "Nyala",
+            "age": 14,
+            "favourite_food": "Beef - Tenderlion, Center Cut",
+            "owner": 15
+        },
+        {
+            "id": 18,
+            "animal": "Pale-throated three-toed sloth",
+            "age": 3,
+            "favourite_food": "Cognac - Courvaisier",
+            "owner": 7
+        },
+        {
+            "id": 19,
+            "animal": "Deer, swamp",
+            "age": 8,
+            "favourite_food": "Plasticspoonblack",
+            "owner": 30
+        },
+        {
+            "id": 20,
+            "animal": "Sociable weaver",
+            "age": 13,
+            "favourite_food": "Muffin Carrot - Individual",
+            "owner": 17
+        },
+        {
+            "id": 21,
+            "animal": "Lion, mountain",
+            "age": 14,
+            "favourite_food": "Mousse - Passion Fruit",
+            "owner": 22
+        },
+        {
+            "id": 22,
+            "animal": "Tortoise, indian star",
+            "age": 9,
+            "favourite_food": "Asparagus - Green, Fresh",
+            "owner": 16
+        },
+        {
+            "id": 23,
+            "animal": "Gray duiker",
+            "age": 11,
+            "favourite_food": "Lamb Tenderloin Nz Fr",
+            "owner": 26
+        },
+        {
+            "id": 24,
+            "animal": "Booby, blue-faced",
+            "age": 5,
+            "favourite_food": "Loquat",
+            "owner": 15
+        },
+        {
+            "id": 25,
+            "animal": "Magellanic penguin",
+            "age": 10,
+            "favourite_food": "Sauce - Salsa",
+            "owner": 7
+        },
+        {
+            "id": 26,
+            "animal": "Serval",
+            "age": 12,
+            "favourite_food": "Vinegar - Balsamic, White",
+            "owner": 12
+        },
+        {
+            "id": 27,
+            "animal": "Iguana, marine",
+            "age": 7,
+            "favourite_food": "Chicken Breast Halal",
+            "owner": 18
+        },
+        {
+            "id": 28,
+            "animal": "European shelduck",
+            "age": 10,
+            "favourite_food": "Cotton Wet Mop 16 Oz",
+            "owner": 14
+        },
+        {
+            "id": 29,
+            "animal": "Weeper capuchin",
+            "age": 11,
+            "favourite_food": "Lid Tray - 16in Dome",
+            "owner": 8
+        },
+        {
+            "id": 30,
+            "animal": "Javan gold-spotted mongoose",
+            "age": 6,
+            "favourite_food": "Broom - Corn",
+            "owner": 14
+        },
+        {
+            "id": 31,
+            "animal": "Turkey, common",
+            "age": 6,
+            "favourite_food": "Placemat - Scallop, White",
+            "owner": 12
+        },
+        {
+            "id": 32,
+            "animal": "Feral rock pigeon",
+            "age": 9,
+            "favourite_food": "Steamers White",
+            "owner": 23
+        },
+        {
+            "id": 33,
+            "animal": "Springbok",
+            "age": 9,
+            "favourite_food": "Sponge Cake Mix - Vanilla",
+            "owner": 16
+        },
+        {
+            "id": 34,
+            "animal": "White-browed sparrow weaver",
+            "age": 9,
+            "favourite_food": "Bonito Flakes - Toku Katsuo",
+            "owner": 18
+        },
+        {
+            "id": 35,
+            "animal": "Numbat",
+            "age": 8,
+            "favourite_food": "Mince Meat - Filling",
+            "owner": 18
+        },
+        {
+            "id": 36,
+            "animal": "Sheep, stone",
+            "age": 12,
+            "favourite_food": "Beer - Mill St Organic",
+            "owner": 28
+        },
+        {
+            "id": 37,
+            "animal": "African wild dog",
+            "age": 4,
+            "favourite_food": "Sponge Cake Mix - Vanilla",
+            "owner": 15
+        },
+        {
+            "id": 38,
+            "animal": "Burrowing owl",
+            "age": 10,
+            "favourite_food": "Tuna - Bluefin",
+            "owner": 2
+        },
+        {
+            "id": 39,
+            "animal": "Mudskipper (unidentified)",
+            "age": 1,
+            "favourite_food": "Seedlings - Buckwheat, Organic",
+            "owner": 18
+        },
+        {
+            "id": 40,
+            "animal": "Black vulture",
+            "age": 12,
+            "favourite_food": "Bar Mix - Pina Colada, 355 Ml",
+            "owner": 11
+        },
+        {
+            "id": 41,
+            "animal": "Shelduck, european",
+            "age": 6,
+            "favourite_food": "Oil - Food, Lacquer Spray",
+            "owner": 13
+        },
+        {
+            "id": 42,
+            "animal": "Cuis",
+            "age": 2,
+            "favourite_food": "Oyster - In Shell",
+            "owner": 4
+        },
+        {
+            "id": 43,
+            "animal": "Rattlesnake, horned",
+            "age": 8,
+            "favourite_food": "Leeks - Large",
+            "owner": 11
+        },
+        {
+            "id": 44,
+            "animal": "Squirrel glider",
+            "age": 3,
+            "favourite_food": "Iced Tea - Lemon, 460 Ml",
+            "owner": 3
+        },
+        {
+            "id": 45,
+            "animal": "Common duiker",
+            "age": 10,
+            "favourite_food": "Mustard - Individual Pkg",
+            "owner": 26
+        },
+        {
+            "id": 46,
+            "animal": "Buffalo, african",
+            "age": 6,
+            "favourite_food": "Syrup - Monin, Irish Cream",
+            "owner": 16
+        },
+        {
+            "id": 47,
+            "animal": "Feral rock pigeon",
+            "age": 1,
+            "favourite_food": "Hickory Smoke, Liquid",
+            "owner": 10
+        },
+        {
+            "id": 48,
+            "animal": "Javan gold-spotted mongoose",
+            "age": 12,
+            "favourite_food": "Egg Patty Fried",
+            "owner": 7
+        },
+        {
+            "id": 49,
+            "animal": "Kangaroo, black-faced",
+            "age": 1,
+            "favourite_food": "Chocolate - Liqueur Cups With Foil",
+            "owner": 10
+        },
+        {
+            "id": 50,
+            "animal": "Ringtail cat",
+            "age": 8,
+            "favourite_food": "Vinegar - Sherry",
+            "owner": 24
+        }
+    ],
+    "owners": [
+    ]
+}
