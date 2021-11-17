@@ -2,6 +2,7 @@
     "animals": [
         {
             "id": 1,
+            "name":"Béca",
             "animal": "Hyena",
             "age": 5,
             "favourite_food": "Pepper",
@@ -9,6 +10,7 @@
         },
         {
             "id": 2,
+            "name":"Loca",
             "animal": "Owl",
             "age": 6,
             "favourite_food": "Salt",
@@ -16,6 +18,7 @@
         },
         {
             "id": 3,
+            "name":"Maryl",
             "animal": "Parrot",
             "age": 7,
             "favourite_food": "Bread",
@@ -23,6 +26,7 @@
         },
         {
             "id": 4,
+            "name":"Bérran",
             "animal": "Duck",
             "age": 10,
             "favourite_food": "Wine",
@@ -30,6 +34,7 @@
         },
         {
             "id": 5,
+            "name":"Tom",
             "animal": "Lion",
             "age": 12,
             "favourite_food": "Garlic",
@@ -37,6 +42,7 @@
         },
         {
             "id": 6,
+            "name":"Sally",
             "animal": "Bat",
             "age": 8,
             "favourite_food": "Baguette",
@@ -44,6 +50,7 @@
         },
         {
             "id": 7,
+            "name":"Nunno",
             "animal": "Seagull",
             "age": 12,
             "favourite_food": "Tea",
@@ -51,6 +58,7 @@
         },
         {
             "id": 8,
+            "name":"Elias",
             "animal": "Rat",
             "age": 2,
             "favourite_food": "Juice",
@@ -58,6 +66,7 @@
         },
         {
             "id": 9,
+            "name":"Loui",
             "animal": "Penguin",
             "age": 2,
             "favourite_food": "Beer",
@@ -65,6 +74,7 @@
         },
         {
             "id": 10,
+            "name":"Lorène",
             "animal": "Aligator",
             "age": 11,
             "favourite_food": "Crackers",
@@ -72,6 +82,7 @@
         },
         {
             "id": 11,
+            "name":"Zoe",
             "animal": "Gecko",
             "age": 1,
             "favourite_food": "Cranberries",
@@ -79,6 +90,7 @@
         },
         {
             "id": 12,
+            "name":"Therese",
             "animal": "Honey badger",
             "age": 15,
             "favourite_food": "Pizza",
@@ -86,6 +98,7 @@
         },
         {
             "id": 13,
+            "name":"Torbjörn",
             "animal": "Bear",
             "age": 11,
             "favourite_food": "Oreo",
@@ -93,6 +106,7 @@
         },
         {
             "id": 14,
+            "name":"Åke",
             "animal": "Fish",
             "age": 6,
             "favourite_food": "Bread",
@@ -100,6 +114,7 @@
         },
         {
             "id": 15,
+            "name":"Aimee",
             "animal": "Bumblebee",
             "age": 3,
             "favourite_food": "Mushroom ",
@@ -107,6 +122,7 @@
         },
         {
             "id": 16,
+            "name":"Marie",
             "animal": "Butterfly",
             "age": 7,
             "favourite_food": "Cheese",
@@ -114,6 +130,7 @@
         },
         {
             "id": 17,
+            "name":"Mélanie",
             "animal": "Cat",
             "age": 14,
             "favourite_food": "Beef",
@@ -121,6 +138,7 @@
         },
         {
             "id": 18,
+            "name":"Ally",
             "animal": "Carb",
             "age": 3,
             "favourite_food": "Cognac",
@@ -128,6 +146,7 @@
         },
         {
             "id": 19,
+            "name":"Bambi",
             "animal": "Deer",
             "age": 8,
             "favourite_food": "Salald",
@@ -135,6 +154,7 @@
         },
         {
             "id": 20,
+            "name":"Mary",
             "animal": "Duck",
             "age": 13,
             "favourite_food": "Carrot",
@@ -142,6 +162,7 @@
         },
         {
             "id": 21,
+            "name":"Simba",
             "animal": "Lion",
             "age": 14,
             "favourite_food": "Passion Fruit",
@@ -149,6 +170,7 @@
         },
         {
             "id": 22,
+            "name":"Stampe",
             "animal": "Deer",
             "age": 9,
             "favourite_food": "Asparagus",
@@ -156,6 +178,7 @@
         },
         {
             "id": 23,
+            "name":"Agnes",
             "animal": "Guineapig",
             "age": 11,
             "favourite_food": "Tomato",
@@ -163,6 +186,7 @@
         },
         {
             "id": 24,
+            "name":"Nadia",
             "animal": "Cat",
             "age": 5,
             "favourite_food": "Milk",
@@ -170,6 +194,7 @@
         },
         {
             "id": 25,
+            "name":"Zhoe",
             "animal": "Hamster",
             "age": 10,
             "favourite_food": "Salsa",
@@ -177,6 +202,7 @@
         },
         {
             "id": 26,
+            "name":"Judy",
             "animal": "Butterfly",
             "age": 12,
             "favourite_food": "Vinegar",
@@ -184,6 +210,7 @@
         },
         {
             "id": 27,
+            "name":"Zelda",
             "animal": "Fish",
             "age": 7,
             "favourite_food": "Chicken",
@@ -191,6 +218,7 @@
         },
         {
             "id": 28,
+            "name":"Gerry",
             "animal": "Bat",
             "age": 10,
             "favourite_food": "Cookies",
@@ -198,6 +226,7 @@
         },
         {
             "id": 29,
+            "name":"Felicia",
             "animal": "Owl",
             "age": 11,
             "favourite_food": "Cucumber",
@@ -205,6 +234,7 @@
         },
         {
             "id": 30,
+            "name":"Yao",
             "animal": "Seagull",
             "age": 6,
             "favourite_food": "Corn",
@@ -212,6 +242,7 @@
         },
         {
             "id": 31,
+            "name":"Hanna",
             "animal": "Hyena",
             "age": 6,
             "favourite_food": "Scallop",
@@ -219,6 +250,7 @@
         },
         {
             "id": 32,
+            "name":"Penny",
             "animal": "Pigeon",
             "age": 9,
             "favourite_food": "Cream",
@@ -226,6 +258,7 @@
         },
         {
             "id": 33,
+            "name":"Gary",
             "animal": "Parrot",
             "age": 9,
             "favourite_food": "Vanilla",
@@ -233,6 +266,7 @@
         },
         {
             "id": 34,
+            "name":"Calle",
             "animal": "Duck",
             "age": 9,
             "favourite_food": "Corn",
@@ -240,6 +274,7 @@
         },
         {
             "id": 35,
+            "name":"Nora",
             "animal": "Hamster",
             "age": 8,
             "favourite_food": "Tomato",
@@ -247,6 +282,7 @@
         },
         {
             "id": 36,
+            "name":"Niko",
             "animal": "Sheep",
             "age": 12,
             "favourite_food": "Beer",
@@ -254,6 +290,7 @@
         },
         {
             "id": 37,
+            "name":"Stellan",
             "animal": "Dog",
             "age": 4,
             "favourite_food": "Cake",
@@ -261,6 +298,7 @@
         },
         {
             "id": 38,
+            "name":"Kuku",
             "animal": "Owl",
             "age": 10,
             "favourite_food": "Tuna",
@@ -268,6 +306,7 @@
         },
         {
             "id": 39,
+            "name":"Ratatouille",
             "animal": "Rat",
             "age": 1,
             "favourite_food": "Carrot",
@@ -275,6 +314,7 @@
         },
         {
             "id": 40,
+            "name":"Pingu",
             "animal": "Penguin",
             "age": 12,
             "favourite_food": "Pina Colada",
@@ -282,6 +322,7 @@
         },
         {
             "id": 41,
+            "name":"Remy",
             "animal": "Rat",
             "age": 6,
             "favourite_food": "Oil",
@@ -289,6 +330,7 @@
         },
         {
             "id": 42,
+            "name":"Kattis",
             "animal": "Cat",
             "age": 2,
             "favourite_food": "Oyster",
@@ -296,6 +338,7 @@
         },
         {
             "id": 43,
+            "name":"Lily",
             "animal": "Lion",
             "age": 8,
             "favourite_food": "Milk",
@@ -303,6 +346,7 @@
         },
         {
             "id": 44,
+            "name":"Wá",
             "animal": "Squirrel",
             "age": 3,
             "favourite_food": "Tea",
@@ -310,6 +354,7 @@
         },
         {
             "id": 45,
+            "name":"Östen",
             "animal": "Hyena",
             "age": 10,
             "favourite_food": "Mustard",
@@ -317,6 +362,7 @@
         },
         {
             "id": 46,
+            "name":"Tim",
             "animal": "Hamster",
             "age": 6,
             "favourite_food": "Syrup",
@@ -324,6 +370,7 @@
         },
         {
             "id": 47,
+            "name":"Marie",
             "animal": "Pigeon",
             "age": 1,
             "favourite_food": "Salt",
@@ -331,6 +378,7 @@
         },
         {
             "id": 48,
+            "name":"Gary",
             "animal": "Sheep",
             "age": 12,
             "favourite_food": "Egg",
@@ -338,6 +386,7 @@
         },
         {
             "id": 49,
+            "name":"Stella",
             "animal": "Dog",
             "age": 1,
             "favourite_food": "Chocolate",
@@ -345,6 +394,7 @@
         },
         {
             "id": 50,
+            "name":"Bu",
             "animal": "Owl",
             "age": 8,
             "favourite_food": "Olive oil",
