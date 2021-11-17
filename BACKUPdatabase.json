@@ -1,0 +1,616 @@
+{
+    "animals": [
+        {
+            "id": 1,
+            "name":"Béca",
+            "animal": "Hyena",
+            "age": 5,
+            "favourite_food": "Pepper",
+            "owner": 6
+        },
+        {
+            "id": 2,
+            "name":"Loca",
+            "animal": "Owl",
+            "age": 6,
+            "favourite_food": "Salt",
+            "owner": 14
+        },
+        {
+            "id": 3,
+            "name":"Maryl",
+            "animal": "Parrot",
+            "age": 7,
+            "favourite_food": "Bread",
+            "owner": 24
+        },
+        {
+            "id": 4,
+            "name":"Bérran",
+            "animal": "Duck",
+            "age": 10,
+            "favourite_food": "Wine",
+            "owner": 25
+        },
+        {
+            "id": 5,
+            "name":"Tom",
+            "animal": "Lion",
+            "age": 12,
+            "favourite_food": "Garlic",
+            "owner": 20
+        },
+        {
+            "id": 6,
+            "name":"Sally",
+            "animal": "Bat",
+            "age": 8,
+            "favourite_food": "Baguette",
+            "owner": 1
+        },
+        {
+            "id": 7,
+            "name":"Nunno",
+            "animal": "Seagull",
+            "age": 12,
+            "favourite_food": "Tea",
+            "owner": 1
+        },
+        {
+            "id": 8,
+            "name":"Elias",
+            "animal": "Rat",
+            "age": 2,
+            "favourite_food": "Juice",
+            "owner": 6
+        },
+        {
+            "id": 9,
+            "name":"Loui",
+            "animal": "Penguin",
+            "age": 2,
+            "favourite_food": "Beer",
+            "owner": 15
+        },
+        {
+            "id": 10,
+            "name":"Lorène",
+            "animal": "Aligator",
+            "age": 11,
+            "favourite_food": "Crackers",
+            "owner": 15
+        },
+        {
+            "id": 11,
+            "name":"Zoe",
+            "animal": "Gecko",
+            "age": 1,
+            "favourite_food": "Cranberries",
+            "owner": 13
+        },
+        {
+            "id": 12,
+            "name":"Therese",
+            "animal": "Honey badger",
+            "age": 15,
+            "favourite_food": "Pizza",
+            "owner": 23
+        },
+        {
+            "id": 13,
+            "name":"Torbjörn",
+            "animal": "Bear",
+            "age": 11,
+            "favourite_food": "Oreo",
+            "owner": 14
+        },
+        {
+            "id": 14,
+            "name":"Åke",
+            "animal": "Fish",
+            "age": 6,
+            "favourite_food": "Bread",
+            "owner": 6
+        },
+        {
+            "id": 15,
+            "name":"Aimee",
+            "animal": "Bumblebee",
+            "age": 3,
+            "favourite_food": "Mushroom ",
+            "owner": 4
+        },
+        {
+            "id": 16,
+            "name":"Marie",
+            "animal": "Butterfly",
+            "age": 7,
+            "favourite_food": "Cheese",
+            "owner": 7
+        },
+        {
+            "id": 17,
+            "name":"Mélanie",
+            "animal": "Cat",
+            "age": 14,
+            "favourite_food": "Beef",
+            "owner": 15
+        },
+        {
+            "id": 18,
+            "name":"Ally",
+            "animal": "Carb",
+            "age": 3,
+            "favourite_food": "Cognac",
+            "owner": 7
+        },
+        {
+            "id": 19,
+            "name":"Bambi",
+            "animal": "Deer",
+            "age": 8,
+            "favourite_food": "Salald",
+            "owner": 30
+        },
+        {
+            "id": 20,
+            "name":"Mary",
+            "animal": "Duck",
+            "age": 13,
+            "favourite_food": "Carrot",
+            "owner": 17
+        },
+        {
+            "id": 21,
+            "name":"Simba",
+            "animal": "Lion",
+            "age": 14,
+            "favourite_food": "Passion Fruit",
+            "owner": 22
+        },
+        {
+            "id": 22,
+            "name":"Stampe",
+            "animal": "Deer",
+            "age": 9,
+            "favourite_food": "Asparagus",
+            "owner": 16
+        },
+        {
+            "id": 23,
+            "name":"Agnes",
+            "animal": "Guineapig",
+            "age": 11,
+            "favourite_food": "Tomato",
+            "owner": 26
+        },
+        {
+            "id": 24,
+            "name":"Nadia",
+            "animal": "Cat",
+            "age": 5,
+            "favourite_food": "Milk",
+            "owner": 15
+        },
+        {
+            "id": 25,
+            "name":"Zhoe",
+            "animal": "Hamster",
+            "age": 10,
+            "favourite_food": "Salsa",
+            "owner": 7
+        },
+        {
+            "id": 26,
+            "name":"Judy",
+            "animal": "Butterfly",
+            "age": 12,
+            "favourite_food": "Vinegar",
+            "owner": 12
+        },
+        {
+            "id": 27,
+            "name":"Zelda",
+            "animal": "Fish",
+            "age": 7,
+            "favourite_food": "Chicken",
+            "owner": 18
+        },
+        {
+            "id": 28,
+            "name":"Gerry",
+            "animal": "Bat",
+            "age": 10,
+            "favourite_food": "Cookies",
+            "owner": 14
+        },
+        {
+            "id": 29,
+            "name":"Felicia",
+            "animal": "Owl",
+            "age": 11,
+            "favourite_food": "Cucumber",
+            "owner": 8
+        },
+        {
+            "id": 30,
+            "name":"Yao",
+            "animal": "Seagull",
+            "age": 6,
+            "favourite_food": "Corn",
+            "owner": 14
+        },
+        {
+            "id": 31,
+            "name":"Hanna",
+            "animal": "Hyena",
+            "age": 6,
+            "favourite_food": "Scallop",
+            "owner": 12
+        },
+        {
+            "id": 32,
+            "name":"Penny",
+            "animal": "Pigeon",
+            "age": 9,
+            "favourite_food": "Cream",
+            "owner": 23
+        },
+        {
+            "id": 33,
+            "name":"Gary",
+            "animal": "Parrot",
+            "age": 9,
+            "favourite_food": "Vanilla",
+            "owner": 16
+        },
+        {
+            "id": 34,
+            "name":"Calle",
+            "animal": "Duck",
+            "age": 9,
+            "favourite_food": "Corn",
+            "owner": 18
+        },
+        {
+            "id": 35,
+            "name":"Nora",
+            "animal": "Hamster",
+            "age": 8,
+            "favourite_food": "Tomato",
+            "owner": 18
+        },
+        {
+            "id": 36,
+            "name":"Niko",
+            "animal": "Sheep",
+            "age": 12,
+            "favourite_food": "Beer",
+            "owner": 28
+        },
+        {
+            "id": 37,
+            "name":"Stellan",
+            "animal": "Dog",
+            "age": 4,
+            "favourite_food": "Cake",
+            "owner": 15
+        },
+        {
+            "id": 38,
+            "name":"Kuku",
+            "animal": "Owl",
+            "age": 10,
+            "favourite_food": "Tuna",
+            "owner": 2
+        },
+        {
+            "id": 39,
+            "name":"Ratatouille",
+            "animal": "Rat",
+            "age": 1,
+            "favourite_food": "Carrot",
+            "owner": 18
+        },
+        {
+            "id": 40,
+            "name":"Pingu",
+            "animal": "Penguin",
+            "age": 12,
+            "favourite_food": "Pina Colada",
+            "owner": 11
+        },
+        {
+            "id": 41,
+            "name":"Remy",
+            "animal": "Rat",
+            "age": 6,
+            "favourite_food": "Oil",
+            "owner": 13
+        },
+        {
+            "id": 42,
+            "name":"Kattis",
+            "animal": "Cat",
+            "age": 2,
+            "favourite_food": "Oyster",
+            "owner": 4
+        },
+        {
+            "id": 43,
+            "name":"Lily",
+            "animal": "Lion",
+            "age": 8,
+            "favourite_food": "Milk",
+            "owner": 11
+        },
+        {
+            "id": 44,
+            "name":"Wá",
+            "animal": "Squirrel",
+            "age": 3,
+            "favourite_food": "Tea",
+            "owner": 3
+        },
+        {
+            "id": 45,
+            "name":"Östen",
+            "animal": "Hyena",
+            "age": 10,
+            "favourite_food": "Mustard",
+            "owner": 26
+        },
+        {
+            "id": 46,
+            "name":"Tim",
+            "animal": "Hamster",
+            "age": 6,
+            "favourite_food": "Syrup",
+            "owner": 16
+        },
+        {
+            "id": 47,
+            "name":"Marie",
+            "animal": "Pigeon",
+            "age": 1,
+            "favourite_food": "Salt",
+            "owner": 10
+        },
+        {
+            "id": 48,
+            "name":"Gary",
+            "animal": "Sheep",
+            "age": 12,
+            "favourite_food": "Egg",
+            "owner": 7
+        },
+        {
+            "id": 49,
+            "name":"Stella",
+            "animal": "Dog",
+            "age": 1,
+            "favourite_food": "Chocolate",
+            "owner": 10
+        },
+        {
+            "id": 50,
+            "name":"Bu",
+            "animal": "Owl",
+            "age": 8,
+            "favourite_food": "Olive oil",
+            "owner": 24
+        }
+    ],
+    "owners": [
+            {
+               "id":1,
+               "first_name":"Jarrett",
+               "last_name":"Bodycote",
+               "email":"jbodycote0@businessinsider.com",
+               "password":"TGr0hyoWjMDn"
+            },
+            {
+               "id":2,
+               "first_name":"Agnesse",
+               "last_name":"Gonneau",
+               "email":"agonneau1@umich.edu",
+               "password":"Tg5PrX0E9"
+            },
+            {
+               "id":3,
+               "first_name":"Cilka",
+               "last_name":"Lewins",
+               "email":"clewins2@google.fr",
+               "password":"3fu8gusCl5Nb"
+            },
+            {
+               "id":4,
+               "first_name":"Broddie",
+               "last_name":"Tottie",
+               "email":"btottie3@cdc.gov",
+               "password":"QNNjDRoiV"
+            },
+            {
+               "id":5,
+               "first_name":"Lesya",
+               "last_name":"Airlie",
+               "email":"lairlie4@scientificamerican.com",
+               "password":"lQaHuoU4r2A"
+            },
+            {
+               "id":6,
+               "first_name":"Jaymie",
+               "last_name":"Chimes",
+               "email":"jchimes5@nymag.com",
+               "password":"o4G0HaSFfnR"
+            },
+            {
+               "id":7,
+               "first_name":"Celeste",
+               "last_name":"Skullet",
+               "email":"cskullet6@163.com",
+               "password":"sRu5EUlUB"
+            },
+            {
+               "id":8,
+               "first_name":"Valle",
+               "last_name":"Pamment",
+               "email":"vpamment7@unicef.org",
+               "password":"VYmTZOtN9"
+            },
+            {
+               "id":9,
+               "first_name":"Urson",
+               "last_name":"Alford",
+               "email":"ualford8@stumbleupon.com",
+               "password":"x1huue8t"
+            },
+            {
+               "id":10,
+               "first_name":"Ericka",
+               "last_name":"Smout",
+               "email":"esmout9@scribd.com",
+               "password":"KewdljF"
+            },
+            {
+               "id":11,
+               "first_name":"Sosanna",
+               "last_name":"Kemish",
+               "email":"skemisha@skype.com",
+               "password":"MxjbUJb"
+            },
+            {
+               "id":12,
+               "first_name":"Peterus",
+               "last_name":"Durkin",
+               "email":"pdurkinb@taobao.com",
+               "password":"ZvKWGQu"
+            },
+            {
+               "id":13,
+               "first_name":"Angelita",
+               "last_name":"Haynes",
+               "email":"ahaynesc@nytimes.com",
+               "password":"j5th7GY0lM9"
+            },
+            {
+               "id":14,
+               "first_name":"Wiley",
+               "last_name":"Cutchie",
+               "email":"wcutchied@goodreads.com",
+               "password":"b4ScGEK9BP"
+            },
+            {
+               "id":15,
+               "first_name":"Anselma",
+               "last_name":"Mayte",
+               "email":"amaytee@nytimes.com",
+               "password":"Zj95iAhsIJ"
+            },
+            {
+               "id":16,
+               "first_name":"Elyn",
+               "last_name":"Yerborn",
+               "email":"eyerbornf@amazon.com",
+               "password":"r56y5XzX"
+            },
+            {
+               "id":17,
+               "first_name":"Evie",
+               "last_name":"Knowlden",
+               "email":"eknowldeng@amazon.de",
+               "password":"gHl1t7"
+            },
+            {
+               "id":18,
+               "first_name":"Sileas",
+               "last_name":"Segar",
+               "email":"ssegarh@jiathis.com",
+               "password":"wjcjhdnB2VZD"
+            },
+            {
+               "id":19,
+               "first_name":"Rosaleen",
+               "last_name":"Whitehouse",
+               "email":"rwhitehousei@telegraph.co.uk",
+               "password":"pEttHnwHS2P9"
+            },
+            {
+               "id":20,
+               "first_name":"Cheston",
+               "last_name":"Shovel",
+               "email":"cshovelj@wordpress.org",
+               "password":"25xEmFz"
+            },
+            {
+               "id":21,
+               "first_name":"Forest",
+               "last_name":"Domke",
+               "email":"fdomkek@naver.com",
+               "password":"qnaQqe6c1yaf"
+            },
+            {
+               "id":22,
+               "first_name":"Carole",
+               "last_name":"Udey",
+               "email":"cudeyl@oracle.com",
+               "password":"H6YsZ3"
+            },
+            {
+               "id":23,
+               "first_name":"Ardeen",
+               "last_name":"Foggarty",
+               "email":"afoggartym@pbs.org",
+               "password":"fUQG5qc1x7Nd"
+            },
+            {
+               "id":24,
+               "first_name":"Alvie",
+               "last_name":"Joules",
+               "email":"ajoulesn@illinois.edu",
+               "password":"3y49pDgx"
+            },
+            {
+               "id":25,
+               "first_name":"Laurie",
+               "last_name":"Wathall",
+               "email":"lwathallo@ucoz.com",
+               "password":"RRH5OAvq"
+            },
+            {
+               "id":26,
+               "first_name":"Pamella",
+               "last_name":"Taillant",
+               "email":"ptaillantp@mysql.com",
+               "password":"jJIzoyHyY"
+            },
+            {
+               "id":27,
+               "first_name":"Pryce",
+               "last_name":"Gittins",
+               "email":"pgittinsq@marriott.com",
+               "password":"8hHB2y3"
+            },
+            {
+               "id":28,
+               "first_name":"Martie",
+               "last_name":"Gatcliff",
+               "email":"mgatcliffr@redcross.org",
+               "password":"F0GrFY9umlhR"
+            },
+            {
+               "id":29,
+               "first_name":"Noelle",
+               "last_name":"Noore",
+               "email":"nnoores@cyberchimps.com",
+               "password":"QIzDo8Fjz"
+            },
+            {
+               "id":30,
+               "first_name":"Alfreda",
+               "last_name":"Pearcehouse",
+               "email":"apearcehouset@trellian.com",
+               "password":"udSVPSD77"
+            }
+        ]
+}
