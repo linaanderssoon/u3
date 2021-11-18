@@ -35,7 +35,7 @@
         {
             "id": 5,
             "name": "Lille SKUTT",
-            "animal": "Rabbit",
+            "animal": "turtle",
             "age": 14,
             "favourite_food": "Apple",
             "owner": 20
@@ -418,7 +418,7 @@
         },
         {
             "id": 3,
-            "first_name": "Sebbe",
+            "first_name": "Isak",
             "last_name": "Pinero",
             "email": "clewins2@google.fr",
             "password": "3fu8gusCl5Nb"

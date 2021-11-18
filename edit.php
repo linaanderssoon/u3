@@ -43,75 +43,81 @@ if($requestMethod === "PATCH") {
     checkData($requestData);
     $id = $requestData["id"];
 
-    foreach($owners as $index => $owner) {
-        if($owner["id"] == $id){
-            $found = true;
+    if(isset($requestData["editOwner"])){
+        foreach($owners as $index => $owner) {
+            if($owner["id"] == $id){
+                $found = true;
 
-            //- first name
-            if(isset($requestData["first_name"])){
-                $owner["first_name"] = $requestData["first_name"];
+                //- first name
+                if(isset($requestData["first_name"])){
+                    $owner["first_name"] = $requestData["first_name"];
+                }
+
+                //- last name
+                if(isset($requestData["last_name"])){
+                    $owner["last_name"] = $requestData["last_name"];
+                }
+                
+                //-email
+                if(isset($requestData["email"])){
+                    $owner["email"] = $requestData["email"];
+                }
+                
+                //password
+                if(isset($requestData["password"])){
+                    $owner["password"] = $requestData["password"];
+                }
+
+
+                $jsonData["owners"][$index] = $owner;
+                $foundOwner = $owner;
+
+                break;
             }
-
-            //- last name
-            if(isset($requestData["last_name"])){
-                $owner["last_name"] = $requestData["last_name"];
-            }
-            
-            //-email
-            if(isset($requestData["email"])){
-                $owner["email"] = $requestData["email"];
-            }
-            
-            //password
-            if(isset($requestData["password"])){
-                $owner["password"] = $requestData["password"];
-            }
-
-
-            $jsonData["owners"][$index] = $owner;
-            $foundOwner = $owner;
-
-            break;
         }
     }
 
+
+    if(isset($requestData["editAnimal"])){
+        foreach($animals as $index => $animal) {
+            if($animal["id"] == $id){
+                $found = true;
         
-    foreach($animals as $index => $animal) {
-        if($animal["id"] == $id){
-            $found = true;
-    
-            //- first name
-            if(isset($requestData["name"])){
-                $animal["name"] = $requestData["name"];
-            }
-    
-            if(isset($requestData["animal"])){
-                $animal["animal"] = $requestData["animal"];
-            }
-                
-            if(isset($requestData["age"])){
-                $animal["age"] = $requestData["age"];
-            }
-                
-            //food
-            if(isset($requestData["favourite_food"])){
-                $animal["favourite_food"] = $requestData["favourite_food"];
-            }
+                //- first name
+                if(isset($requestData["name"])){
+                    $animal["name"] = $requestData["name"];
+                }
+        
+                if(isset($requestData["animal"])){
+                    $animal["animal"] = $requestData["animal"];
+                }
+                    
+                if(isset($requestData["age"])){
+                    $animal["age"] = $requestData["age"];
+                }
+                    
+                //food
+                if(isset($requestData["favourite_food"])){
+                    $animal["favourite_food"] = $requestData["favourite_food"];
+                }
 
-            //owner
-            if(isset($requestData["owner"])){
-                $animal["owner"] = $requestData["owner"];
+                //owner
+                if(isset($requestData["owner"])){
+                    $animal["owner"] = $requestData["owner"];
+                }
+                    
+                $jsonData["animals"][$index] = $animal;
+                $foundAnimal = $animal;
+        
+                break;
             }
-                
-            $jsonData["animals"][$index] = $animal;
-            $foundAnimal = $animal;
-    
-            break;
         }
+
     }
+    
 
     if ($found === false) {
-        send(
+        sendJson(
             [
                 "code" => 5,
                 "message" => "The owner or animal by `id` does not exist"
@@ -128,6 +134,13 @@ if($requestMethod === "PATCH") {
     }
 
     
+} else {
+    sendJson(
+        [
+            "code" => 6,
+            "message" => "The method is not allowed"
+        ],405
+    );
 }
 
 ?>
