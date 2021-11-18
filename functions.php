@@ -52,32 +52,76 @@ function checkData($array) {
 function checkLimit($array){
     $limit = $_GET["limit"];
     $chopped = array_slice($array, 0, $limit);
-    sendJson($chopped);
+    return $chopped;
+    // exit();
 }
 
 function checkIds($array){
     
     $ids = explode(",", $_GET["ids"]);
     $filteredById = [];
-
+    
     foreach ($array as $key) {
         if(in_array($key["id"], $ids)) {
             $filteredById[] = $key;
         }
     }
+    
+    // if($_GET["includes"] == true) {
+    //     foreach($filteredById as $item) {
+    //         $item["owner"] = getOwnerObj($item["id"]);
+    //     }
+
+    // }
 
     sendJson($filteredById);
+    exit();
     
 }
 
 function getOne($array) {
     $id = $_GET["id"];
 
-    foreach ($array as $key) {
-        if ($key["id"] == $id) {
-            sendJson($key);
+    foreach ($array as $index => $obj) {
+        if ($obj["id"] == $id) {
+            if(isset($_GET["includes"])){
+                $array[$index]["owner"] = getOwnerObj($obj["owner"]);
+            }
+            
+            sendJson($array[$index]);
+            exit();
         }
     }
 }
+
+function filterStuff($array, $key, $value) {
+    $filteredArray = [];
+
+    foreach ($array as $element) {
+        if($element["$key"] == $value) {
+            $filteredArray[] = $element;
+        }
+    }
+
+    if(isset($_GET["limit"])) {
+        sendJson(checkLimit($filteredArray));   
+    }
+
+    sendJson($filteredArray);
+}
+
+function getOwnerObj($ownerID){
+    $jsonData = loadJson("database.json");
+    $owners = $jsonData["owners"];
+
+    foreach($owners as $owner) {
+        if($owner["id"] === $ownerID){
+            $ownerObj = $owner;
+        }
+    }
+
+    return $ownerObj;
+}
+
 
 ?>
