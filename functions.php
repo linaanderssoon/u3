@@ -49,4 +49,35 @@ function checkData($array) {
     }
 }
 
+function checkLimit($array){
+    $limit = $_GET["limit"];
+    $chopped = array_slice($array, 0, $limit);
+    sendJson($chopped);
+}
+
+function checkIds($array){
+    
+    $ids = explode(",", $_GET["ids"]);
+    $filteredById = [];
+
+    foreach ($array as $key) {
+        if(in_array($key["id"], $ids)) {
+            $filteredById[] = $key;
+        }
+    }
+
+    sendJson($filteredById);
+    
+}
+
+function getOne($array) {
+    $id = $_GET["id"];
+
+    foreach ($array as $key) {
+        if ($key["id"] == $id) {
+            sendJson($key);
+        }
+    }
+}
+
 ?>
