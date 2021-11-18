@@ -28,7 +28,7 @@ if($requestMethod === "PATCH") {
             "code" => 1,
             "message" => "Missing 'id' of request body"
 
-            ], 400
+        ], 400
         );
     }
 
