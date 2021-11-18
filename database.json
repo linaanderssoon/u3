@@ -2,7 +2,7 @@
     "animals": [
         {
             "id": 1,
-            "name":"Béca",
+            "name": "B\u00e9ca",
             "animal": "Hyena",
             "age": 5,
             "favourite_food": "Pepper",
@@ -10,7 +10,7 @@
         },
         {
             "id": 2,
-            "name":"Loca",
+            "name": "Loca",
             "animal": "Owl",
             "age": 6,
             "favourite_food": "Salt",
@@ -18,7 +18,7 @@
         },
         {
             "id": 3,
-            "name":"Maryl",
+            "name": "Maryl",
             "animal": "Parrot",
             "age": 7,
             "favourite_food": "Bread",
@@ -26,7 +26,7 @@
         },
         {
             "id": 4,
-            "name":"Bérran",
+            "name": "B\u00e9rran",
             "animal": "Duck",
             "age": 10,
             "favourite_food": "Wine",
@@ -34,15 +34,15 @@
         },
         {
             "id": 5,
-            "name":"Tom",
-            "animal": "Lion",
-            "age": 12,
-            "favourite_food": "Garlic",
+            "name": "Lille SKUTT",
+            "animal": "Rabbit",
+            "age": 14,
+            "favourite_food": "Apple",
             "owner": 20
         },
         {
             "id": 6,
-            "name":"Sally",
+            "name": "Sally",
             "animal": "Bat",
             "age": 8,
             "favourite_food": "Baguette",
@@ -50,7 +50,7 @@
         },
         {
             "id": 7,
-            "name":"Nunno",
+            "name": "Nunno",
             "animal": "Seagull",
             "age": 12,
             "favourite_food": "Tea",
@@ -58,7 +58,7 @@
         },
         {
             "id": 8,
-            "name":"Elias",
+            "name": "Elias",
             "animal": "Rat",
             "age": 2,
             "favourite_food": "Juice",
@@ -66,7 +66,7 @@
         },
         {
             "id": 9,
-            "name":"Loui",
+            "name": "Loui",
             "animal": "Penguin",
             "age": 2,
             "favourite_food": "Beer",
@@ -74,7 +74,7 @@
         },
         {
             "id": 10,
-            "name":"Lorène",
+            "name": "Lor\u00e8ne",
             "animal": "Aligator",
             "age": 11,
             "favourite_food": "Crackers",
@@ -82,7 +82,7 @@
         },
         {
             "id": 11,
-            "name":"Zoe",
+            "name": "Zoe",
             "animal": "Gecko",
             "age": 1,
             "favourite_food": "Cranberries",
@@ -90,7 +90,7 @@
         },
         {
             "id": 12,
-            "name":"Therese",
+            "name": "Therese",
             "animal": "Honey badger",
             "age": 15,
             "favourite_food": "Pizza",
@@ -98,7 +98,7 @@
         },
         {
             "id": 13,
-            "name":"Torbjörn",
+            "name": "Torbj\u00f6rn",
             "animal": "Bear",
             "age": 11,
             "favourite_food": "Oreo",
@@ -106,7 +106,7 @@
         },
         {
             "id": 14,
-            "name":"Åke",
+            "name": "\u00c5ke",
             "animal": "Fish",
             "age": 6,
             "favourite_food": "Bread",
@@ -114,7 +114,7 @@
         },
         {
             "id": 15,
-            "name":"Aimee",
+            "name": "Aimee",
             "animal": "Bumblebee",
             "age": 3,
             "favourite_food": "Mushroom ",
@@ -122,7 +122,7 @@
         },
         {
             "id": 16,
-            "name":"Marie",
+            "name": "Marie",
             "animal": "Butterfly",
             "age": 7,
             "favourite_food": "Cheese",
@@ -130,7 +130,7 @@
         },
         {
             "id": 17,
-            "name":"Mélanie",
+            "name": "M\u00e9lanie",
             "animal": "Cat",
             "age": 14,
             "favourite_food": "Beef",
@@ -138,7 +138,7 @@
         },
         {
             "id": 18,
-            "name":"Ally",
+            "name": "Ally",
             "animal": "Carb",
             "age": 3,
             "favourite_food": "Cognac",
@@ -146,7 +146,7 @@
         },
         {
             "id": 19,
-            "name":"Bambi",
+            "name": "Bambi",
             "animal": "Deer",
             "age": 8,
             "favourite_food": "Salald",
@@ -154,7 +154,7 @@
         },
         {
             "id": 20,
-            "name":"Mary",
+            "name": "Mary",
             "animal": "Duck",
             "age": 13,
             "favourite_food": "Carrot",
@@ -162,7 +162,7 @@
         },
         {
             "id": 21,
-            "name":"Simba",
+            "name": "Simba",
             "animal": "Lion",
             "age": 14,
             "favourite_food": "Passion Fruit",
@@ -170,7 +170,7 @@
         },
         {
             "id": 22,
-            "name":"Stampe",
+            "name": "Stampe",
             "animal": "Deer",
             "age": 9,
             "favourite_food": "Asparagus",
@@ -178,7 +178,7 @@
         },
         {
             "id": 23,
-            "name":"Agnes",
+            "name": "Agnes",
             "animal": "Guineapig",
             "age": 11,
             "favourite_food": "Tomato",
@@ -186,7 +186,7 @@
         },
         {
             "id": 24,
-            "name":"Nadia",
+            "name": "Nadia",
             "animal": "Cat",
             "age": 5,
             "favourite_food": "Milk",
@@ -194,7 +194,7 @@
         },
         {
             "id": 25,
-            "name":"Zhoe",
+            "name": "Zhoe",
             "animal": "Hamster",
             "age": 10,
             "favourite_food": "Salsa",
@@ -202,7 +202,7 @@
         },
         {
             "id": 26,
-            "name":"Judy",
+            "name": "Judy",
             "animal": "Butterfly",
             "age": 12,
             "favourite_food": "Vinegar",
@@ -210,7 +210,7 @@
         },
         {
             "id": 27,
-            "name":"Zelda",
+            "name": "Zelda",
             "animal": "Fish",
             "age": 7,
             "favourite_food": "Chicken",
@@ -218,7 +218,7 @@
         },
         {
             "id": 28,
-            "name":"Gerry",
+            "name": "Gerry",
             "animal": "Bat",
             "age": 10,
             "favourite_food": "Cookies",
@@ -226,7 +226,7 @@
         },
         {
             "id": 29,
-            "name":"Felicia",
+            "name": "Felicia",
             "animal": "Owl",
             "age": 11,
             "favourite_food": "Cucumber",
@@ -234,7 +234,7 @@
         },
         {
             "id": 30,
-            "name":"Yao",
+            "name": "Yao",
             "animal": "Seagull",
             "age": 6,
             "favourite_food": "Corn",
@@ -242,7 +242,7 @@
         },
         {
             "id": 31,
-            "name":"Hanna",
+            "name": "Hanna",
             "animal": "Hyena",
             "age": 6,
             "favourite_food": "Scallop",
@@ -250,7 +250,7 @@
         },
         {
             "id": 32,
-            "name":"Penny",
+            "name": "Penny",
             "animal": "Pigeon",
             "age": 9,
             "favourite_food": "Cream",
@@ -258,7 +258,7 @@
         },
         {
             "id": 33,
-            "name":"Gary",
+            "name": "Gary",
             "animal": "Parrot",
             "age": 9,
             "favourite_food": "Vanilla",
@@ -266,7 +266,7 @@
         },
         {
             "id": 34,
-            "name":"Calle",
+            "name": "Calle",
             "animal": "Duck",
             "age": 9,
             "favourite_food": "Corn",
@@ -274,7 +274,7 @@
         },
         {
             "id": 35,
-            "name":"Nora",
+            "name": "Nora",
             "animal": "Hamster",
             "age": 8,
             "favourite_food": "Tomato",
@@ -282,7 +282,7 @@
         },
         {
             "id": 36,
-            "name":"Niko",
+            "name": "Niko",
             "animal": "Sheep",
             "age": 12,
             "favourite_food": "Beer",
@@ -290,7 +290,7 @@
         },
         {
             "id": 37,
-            "name":"Stellan",
+            "name": "Stellan",
             "animal": "Dog",
             "age": 4,
             "favourite_food": "Cake",
@@ -298,7 +298,7 @@
         },
         {
             "id": 38,
-            "name":"Kuku",
+            "name": "Kuku",
             "animal": "Owl",
             "age": 10,
             "favourite_food": "Tuna",
@@ -306,7 +306,7 @@
         },
         {
             "id": 39,
-            "name":"Ratatouille",
+            "name": "Ratatouille",
             "animal": "Rat",
             "age": 1,
             "favourite_food": "Carrot",
@@ -314,7 +314,7 @@
         },
         {
             "id": 40,
-            "name":"Pingu",
+            "name": "Pingu",
             "animal": "Penguin",
             "age": 12,
             "favourite_food": "Pina Colada",
@@ -322,7 +322,7 @@
         },
         {
             "id": 41,
-            "name":"Remy",
+            "name": "Remy",
             "animal": "Rat",
             "age": 6,
             "favourite_food": "Oil",
@@ -330,7 +330,7 @@
         },
         {
             "id": 42,
-            "name":"Kattis",
+            "name": "Kattis",
             "animal": "Cat",
             "age": 2,
             "favourite_food": "Oyster",
@@ -338,7 +338,7 @@
         },
         {
             "id": 43,
-            "name":"Lily",
+            "name": "Lily",
             "animal": "Lion",
             "age": 8,
             "favourite_food": "Milk",
@@ -346,7 +346,7 @@
         },
         {
             "id": 44,
-            "name":"Wá",
+            "name": "W\u00e1",
             "animal": "Squirrel",
             "age": 3,
             "favourite_food": "Tea",
@@ -354,7 +354,7 @@
         },
         {
             "id": 45,
-            "name":"Östen",
+            "name": "\u00d6sten",
             "animal": "Hyena",
             "age": 10,
             "favourite_food": "Mustard",
@@ -362,7 +362,7 @@
         },
         {
             "id": 46,
-            "name":"Tim",
+            "name": "Tim",
             "animal": "Hamster",
             "age": 6,
             "favourite_food": "Syrup",
@@ -370,7 +370,7 @@
         },
         {
             "id": 47,
-            "name":"Marie",
+            "name": "Marie",
             "animal": "Pigeon",
             "age": 1,
             "favourite_food": "Salt",
@@ -378,7 +378,7 @@
         },
         {
             "id": 48,
-            "name":"Gary",
+            "name": "Gary",
             "animal": "Sheep",
             "age": 12,
             "favourite_food": "Egg",
@@ -386,7 +386,7 @@
         },
         {
             "id": 49,
-            "name":"Stella",
+            "name": "Stella",
             "animal": "Dog",
             "age": 1,
             "favourite_food": "Chocolate",
@@ -394,7 +394,7 @@
         },
         {
             "id": 50,
-            "name":"Bu",
+            "name": "Bu",
             "animal": "Owl",
             "age": 8,
             "favourite_food": "Olive oil",
@@ -402,215 +402,215 @@
         }
     ],
     "owners": [
-            {
-               "id":1,
-               "first_name":"Jarrett",
-               "last_name":"Bodycote",
-               "email":"jbodycote0@businessinsider.com",
-               "password":"TGr0hyoWjMDn"
-            },
-            {
-               "id":2,
-               "first_name":"Agnesse",
-               "last_name":"Gonneau",
-               "email":"agonneau1@umich.edu",
-               "password":"Tg5PrX0E9"
-            },
-            {
-               "id":3,
-               "first_name":"Cilka",
-               "last_name":"Lewins",
-               "email":"clewins2@google.fr",
-               "password":"3fu8gusCl5Nb"
-            },
-            {
-               "id":4,
-               "first_name":"Broddie",
-               "last_name":"Tottie",
-               "email":"btottie3@cdc.gov",
-               "password":"QNNjDRoiV"
-            },
-            {
-               "id":5,
-               "first_name":"Lesya",
-               "last_name":"Airlie",
-               "email":"lairlie4@scientificamerican.com",
-               "password":"lQaHuoU4r2A"
-            },
-            {
-               "id":6,
-               "first_name":"Jaymie",
-               "last_name":"Chimes",
-               "email":"jchimes5@nymag.com",
-               "password":"o4G0HaSFfnR"
-            },
-            {
-               "id":7,
-               "first_name":"Celeste",
-               "last_name":"Skullet",
-               "email":"cskullet6@163.com",
-               "password":"sRu5EUlUB"
-            },
-            {
-               "id":8,
-               "first_name":"Valle",
-               "last_name":"Pamment",
-               "email":"vpamment7@unicef.org",
-               "password":"VYmTZOtN9"
-            },
-            {
-               "id":9,
-               "first_name":"Urson",
-               "last_name":"Alford",
-               "email":"ualford8@stumbleupon.com",
-               "password":"x1huue8t"
-            },
-            {
-               "id":10,
-               "first_name":"Ericka",
-               "last_name":"Smout",
-               "email":"esmout9@scribd.com",
-               "password":"KewdljF"
-            },
-            {
-               "id":11,
-               "first_name":"Sosanna",
-               "last_name":"Kemish",
-               "email":"skemisha@skype.com",
-               "password":"MxjbUJb"
-            },
-            {
-               "id":12,
-               "first_name":"Peterus",
-               "last_name":"Durkin",
-               "email":"pdurkinb@taobao.com",
-               "password":"ZvKWGQu"
-            },
-            {
-               "id":13,
-               "first_name":"Angelita",
-               "last_name":"Haynes",
-               "email":"ahaynesc@nytimes.com",
-               "password":"j5th7GY0lM9"
-            },
-            {
-               "id":14,
-               "first_name":"Wiley",
-               "last_name":"Cutchie",
-               "email":"wcutchied@goodreads.com",
-               "password":"b4ScGEK9BP"
-            },
-            {
-               "id":15,
-               "first_name":"Anselma",
-               "last_name":"Mayte",
-               "email":"amaytee@nytimes.com",
-               "password":"Zj95iAhsIJ"
-            },
-            {
-               "id":16,
-               "first_name":"Elyn",
-               "last_name":"Yerborn",
-               "email":"eyerbornf@amazon.com",
-               "password":"r56y5XzX"
-            },
-            {
-               "id":17,
-               "first_name":"Evie",
-               "last_name":"Knowlden",
-               "email":"eknowldeng@amazon.de",
-               "password":"gHl1t7"
-            },
-            {
-               "id":18,
-               "first_name":"Sileas",
-               "last_name":"Segar",
-               "email":"ssegarh@jiathis.com",
-               "password":"wjcjhdnB2VZD"
-            },
-            {
-               "id":19,
-               "first_name":"Rosaleen",
-               "last_name":"Whitehouse",
-               "email":"rwhitehousei@telegraph.co.uk",
-               "password":"pEttHnwHS2P9"
-            },
-            {
-               "id":20,
-               "first_name":"Cheston",
-               "last_name":"Shovel",
-               "email":"cshovelj@wordpress.org",
-               "password":"25xEmFz"
-            },
-            {
-               "id":21,
-               "first_name":"Forest",
-               "last_name":"Domke",
-               "email":"fdomkek@naver.com",
-               "password":"qnaQqe6c1yaf"
-            },
-            {
-               "id":22,
-               "first_name":"Carole",
-               "last_name":"Udey",
-               "email":"cudeyl@oracle.com",
-               "password":"H6YsZ3"
-            },
-            {
-               "id":23,
-               "first_name":"Ardeen",
-               "last_name":"Foggarty",
-               "email":"afoggartym@pbs.org",
-               "password":"fUQG5qc1x7Nd"
-            },
-            {
-               "id":24,
-               "first_name":"Alvie",
-               "last_name":"Joules",
-               "email":"ajoulesn@illinois.edu",
-               "password":"3y49pDgx"
-            },
-            {
-               "id":25,
-               "first_name":"Laurie",
-               "last_name":"Wathall",
-               "email":"lwathallo@ucoz.com",
-               "password":"RRH5OAvq"
-            },
-            {
-               "id":26,
-               "first_name":"Pamella",
-               "last_name":"Taillant",
-               "email":"ptaillantp@mysql.com",
-               "password":"jJIzoyHyY"
-            },
-            {
-               "id":27,
-               "first_name":"Pryce",
-               "last_name":"Gittins",
-               "email":"pgittinsq@marriott.com",
-               "password":"8hHB2y3"
-            },
-            {
-               "id":28,
-               "first_name":"Martie",
-               "last_name":"Gatcliff",
-               "email":"mgatcliffr@redcross.org",
-               "password":"F0GrFY9umlhR"
-            },
-            {
-               "id":29,
-               "first_name":"Noelle",
-               "last_name":"Noore",
-               "email":"nnoores@cyberchimps.com",
-               "password":"QIzDo8Fjz"
-            },
-            {
-               "id":30,
-               "first_name":"Alfreda",
-               "last_name":"Pearcehouse",
-               "email":"apearcehouset@trellian.com",
-               "password":"udSVPSD77"
-            }
-        ]
+        {
+            "id": 1,
+            "first_name": "Jarrett",
+            "last_name": "Bodycote",
+            "email": "jbodycote0@businessinsider.com",
+            "password": "TGr0hyoWjMDn"
+        },
+        {
+            "id": 2,
+            "first_name": "Agnesse",
+            "last_name": "Gonneau",
+            "email": "agonneau1@umich.edu",
+            "password": "Tg5PrX0E9"
+        },
+        {
+            "id": 3,
+            "first_name": "Sebbe",
+            "last_name": "Pinero",
+            "email": "clewins2@google.fr",
+            "password": "3fu8gusCl5Nb"
+        },
+        {
+            "id": 4,
+            "first_name": "Broddie",
+            "last_name": "Tottie",
+            "email": "btottie3@cdc.gov",
+            "password": "QNNjDRoiV"
+        },
+        {
+            "id": 5,
+            "first_name": "Leslie",
+            "last_name": "Airlie",
+            "email": "lairlie4@scientificamerican.com",
+            "password": "lQaHuoU4r2A"
+        },
+        {
+            "id": 6,
+            "first_name": "Jaymie",
+            "last_name": "Chimes",
+            "email": "jchimes5@nymag.com",
+            "password": "o4G0HaSFfnR"
+        },
+        {
+            "id": 7,
+            "first_name": "Celeste",
+            "last_name": "Skullet",
+            "email": "cskullet6@163.com",
+            "password": "sRu5EUlUB"
+        },
+        {
+            "id": 8,
+            "first_name": "Valle",
+            "last_name": "Pamment",
+            "email": "vpamment7@unicef.org",
+            "password": "VYmTZOtN9"
+        },
+        {
+            "id": 9,
+            "first_name": "Urson",
+            "last_name": "Alford",
+            "email": "ualford8@stumbleupon.com",
+            "password": "x1huue8t"
+        },
+        {
+            "id": 10,
+            "first_name": "Ericka",
+            "last_name": "Smout",
+            "email": "esmout9@scribd.com",
+            "password": "KewdljF"
+        },
+        {
+            "id": 11,
+            "first_name": "Sosanna",
+            "last_name": "Kemish",
+            "email": "skemisha@skype.com",
+            "password": "MxjbUJb"
+        },
+        {
+            "id": 12,
+            "first_name": "Peterus",
+            "last_name": "Durkin",
+            "email": "pdurkinb@taobao.com",
+            "password": "ZvKWGQu"
+        },
+        {
+            "id": 13,
+            "first_name": "Angelita",
+            "last_name": "Haynes",
+            "email": "ahaynesc@nytimes.com",
+            "password": "j5th7GY0lM9"
+        },
+        {
+            "id": 14,
+            "first_name": "Wiley",
+            "last_name": "Cutchie",
+            "email": "wcutchied@goodreads.com",
+            "password": "b4ScGEK9BP"
+        },
+        {
+            "id": 15,
+            "first_name": "Anselma",
+            "last_name": "Mayte",
+            "email": "amaytee@nytimes.com",
+            "password": "Zj95iAhsIJ"
+        },
+        {
+            "id": 16,
+            "first_name": "Elyn",
+            "last_name": "Yerborn",
+            "email": "eyerbornf@amazon.com",
+            "password": "r56y5XzX"
+        },
+        {
+            "id": 17,
+            "first_name": "Evie",
+            "last_name": "Knowlden",
+            "email": "eknowldeng@amazon.de",
+            "password": "gHl1t7"
+        },
+        {
+            "id": 18,
+            "first_name": "Sileas",
+            "last_name": "Segar",
+            "email": "ssegarh@jiathis.com",
+            "password": "wjcjhdnB2VZD"
+        },
+        {
+            "id": 19,
+            "first_name": "Rosaleen",
+            "last_name": "Whitehouse",
+            "email": "rwhitehousei@telegraph.co.uk",
+            "password": "pEttHnwHS2P9"
+        },
+        {
+            "id": 20,
+            "first_name": "Cheston",
+            "last_name": "Shovel",
+            "email": "cshovelj@wordpress.org",
+            "password": "25xEmFz"
+        },
+        {
+            "id": 21,
+            "first_name": "Forest",
+            "last_name": "Domke",
+            "email": "fdomkek@naver.com",
+            "password": "qnaQqe6c1yaf"
+        },
+        {
+            "id": 22,
+            "first_name": "Carole",
+            "last_name": "Udey",
+            "email": "cudeyl@oracle.com",
+            "password": "H6YsZ3"
+        },
+        {
+            "id": 23,
+            "first_name": "Ardeen",
+            "last_name": "Foggarty",
+            "email": "afoggartym@pbs.org",
+            "password": "fUQG5qc1x7Nd"
+        },
+        {
+            "id": 24,
+            "first_name": "Alvie",
+            "last_name": "Joules",
+            "email": "ajoulesn@illinois.edu",
+            "password": "3y49pDgx"
+        },
+        {
+            "id": 25,
+            "first_name": "Laurie",
+            "last_name": "Wathall",
+            "email": "lwathallo@ucoz.com",
+            "password": "RRH5OAvq"
+        },
+        {
+            "id": 26,
+            "first_name": "Pamella",
+            "last_name": "Taillant",
+            "email": "ptaillantp@mysql.com",
+            "password": "jJIzoyHyY"
+        },
+        {
+            "id": 27,
+            "first_name": "Pryce",
+            "last_name": "Gittins",
+            "email": "pgittinsq@marriott.com",
+            "password": "8hHB2y3"
+        },
+        {
+            "id": 28,
+            "first_name": "Martie",
+            "last_name": "Gatcliff",
+            "email": "mgatcliffr@redcross.org",
+            "password": "F0GrFY9umlhR"
+        },
+        {
+            "id": 29,
+            "first_name": "Noelle",
+            "last_name": "Noore",
+            "email": "nnoores@cyberchimps.com",
+            "password": "QIzDo8Fjz"
+        },
+        {
+            "id": 30,
+            "first_name": "Alfreda",
+            "last_name": "Pearcehouse",
+            "email": "apearcehouset@trellian.com",
+            "password": "udSVPSD77"
+        }
+    ]
 }
