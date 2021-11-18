@@ -7,28 +7,18 @@ $contentType = $_SERVER["CONTENT_TYPE"];
 
 $jsonData = loadJson("database.json");
 
+//Vår array av djur eller owners
 $animals = $jsonData["animals"];
 $owners = $jsonData["owners"];
 
+//Vår data
 $data = file_get_contents("php://input");
 $requestData = json_decode($data, true);
 
-
+//Det vi hittar
 $found = false;
 $foundOwner = null;
 $foundAnimal = null;
-
-function checkData($array) {
-    foreach($array as $key => $value) {
-        if($value == ""){
-            sendJson([
-                "code" => 1,
-                "message" => "$key is empty"
-            ], 404
-            );
-        }
-    }
-}
 
 
 if($requestMethod === "PATCH") {    

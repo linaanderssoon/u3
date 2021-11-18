@@ -34,10 +34,10 @@
         },
         {
             "id": 5,
-            "name": "Lille SKUTT",
-            "animal": "turtle",
-            "age": 14,
-            "favourite_food": "Apple",
+            "name": "Lille Skutt",
+            "animal": "Rabbit",
+            "age": 12,
+            "favourite_food": "Carrot",
             "owner": 20
         },
         {

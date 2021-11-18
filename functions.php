@@ -37,4 +37,16 @@ function errorMsg($msg, $code = 400) {
     exit();
 }
 
+function checkData($array) {
+    foreach($array as $key => $value) {
+        if($value == ""){
+            sendJson([
+                "code" => 1,
+                "message" => "$key is empty"
+            ], 404
+            );
+        }
+    }
+}
+
 ?>
