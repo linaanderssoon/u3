@@ -68,27 +68,27 @@ if($requestMethod === "PATCH") {
     
                 //- first name
                 if(isset($requestData["name"])){
-                    $user["name"] = $requestData["name"];
+                    $animal["name"] = $requestData["name"];
                 }
     
                 //- last name
                 if(isset($requestData["animal"])){
-                    $user["animal"] = $requestData["animal"];
+                    $animal["animal"] = $requestData["animal"];
                 }
                 
                 //-email
                 if(isset($requestData["age"])){
-                    $user["age"] = $requestData["age"];
+                    $animal["age"] = $requestData["age"];
                 }
                 
                 //password
                 if(isset($requestData["favourite_food"])){
-                    $user["favourite_food"] = $requestData["favourite_food"];
+                    $animal["favourite_food"] = $requestData["favourite_food"];
                 }
 
                 //owner
                 if(isset($requestData["owner"])){
-                    $user["owner"] = $requestData["owner"];
+                    $animal["owner"] = $requestData["owner"];
                 }
                 
                 $animals[$index] = $animal;
