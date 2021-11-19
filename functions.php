@@ -4,7 +4,7 @@ function sendJson($data = "msg", $statusCode = 200) {
     header("Content-Type: application/json");
     http_response_code($statusCode);
 
-    echo json_encode($data);
+    echo json_encode(includes($data));
     exit();
 }
 
@@ -38,6 +38,9 @@ function checkData($array) {
 function checkLimit($array){
     $limit = $_GET["limit"];
     $chopped = array_slice($array, 0, $limit);
+
+    includes($chopped);
+    
     return $chopped;
     // exit();
 }
@@ -57,12 +60,7 @@ function checkIds($array){
     }
 
     //OM includes har skickats med, gå igenom de filtrerade objekten och byt ut owner ID till owner object.
-    if(isset($_GET["includes"])) {
-        foreach($filteredById as $index => $item) {
-            $filteredById[$index]["owner"] = getOwnerObj($item["owner"]);
-        }
-
-    }
+    includes($filteredById);
 
     //Skicka tillbaka den filtrerade arrayen
     sendJson($filteredById);
@@ -72,8 +70,12 @@ function checkIds($array){
 function getOne($array) {
     $id = $_GET["id"];
 
+    $foundID = false;
+
     foreach ($array as $index => $obj) {
         if ($obj["id"] == $id) {
+            $foundID = true;
+
             if(isset($_GET["includes"])){
                 $array[$index]["owner"] = getOwnerObj($obj["owner"]);
             }
@@ -81,6 +83,16 @@ function getOne($array) {
             sendJson($array[$index]);
             exit();
         }
+    }
+
+    if($foundID == false) {
+        sendJson(
+            [
+                "code" => 19,
+                "message" => "This id does not exist"
+            ],405
+        );
+
     }
 }
 
@@ -93,9 +105,13 @@ function filterStuff($array, $key, $value) {
         }
     }
 
+    includes($filteredArray);
+
     if(isset($_GET["limit"])) {
         sendJson(checkLimit($filteredArray));   
     }
+
+    
 
     sendJson($filteredArray);
 }
@@ -103,14 +119,24 @@ function filterStuff($array, $key, $value) {
 function getOwnerObj($ownerID){
     $jsonData = loadJson("database.json");
     $owners = $jsonData["owners"];
-
+    
     foreach($owners as $owner) {
         if($owner["id"] === $ownerID){
             $ownerObj = $owner;
         }
     }
-
+    
     return $ownerObj;
+}
+
+function includes($array) {
+    if(isset($_GET["includes"])) {
+        foreach($array as $index => $item) {
+            $array[$index]["owner"] = getOwnerObj($item["owner"]);
+        }
+    }
+
+    return $array;
 }
 
 function getHighestID($array) {
