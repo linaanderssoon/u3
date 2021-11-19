@@ -4,7 +4,7 @@ require_once "functions.php";
 error_reporting(-1);
 $requestMethod = $_SERVER["REQUEST_METHOD"];
 
-if ($method === "OPTIONS") {
+if ($requestMethod === "OPTIONS") {
     header("Access-Control-Allow-Origin: *");
     header("Access-Control-Allow-Headers: *");
     exit();

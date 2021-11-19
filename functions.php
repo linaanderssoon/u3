@@ -43,22 +43,28 @@ function checkLimit($array){
 }
 
 function checkIds($array){
+    //Hämtar idn som skickats med GET
     $ids = explode(",", $_GET["ids"]);
     $filteredById = [];
     
-    foreach ($array as $key) {
-        if(in_array($key["id"], $ids)) {
-            $filteredById[] = $key;
+    //Gå igenom arrayen som tagits emot och kolla om de id:n som tagits emot i GET
+    //finns i arrayen som tagits emot
+    //Om de finns: Lägg till i filteredById
+    foreach ($array as $index => $item) {
+        if(in_array($item["id"], $ids)) {
+            $filteredById[] = $item;
         }
     }
-    
-    // if($_GET["includes"] == true) {
-    //     foreach($filteredById as $item) {
-    //         $item["owner"] = getOwnerObj($item["id"]);
-    //     }
 
-    // }
+    //OM includes har skickats med, gå igenom de filtrerade objekten och byt ut owner ID till owner object.
+    if(isset($_GET["includes"])) {
+        foreach($filteredById as $index => $item) {
+            $filteredById[$index]["owner"] = getOwnerObj($item["owner"]);
+        }
 
+    }
+
+    //Skicka tillbaka den filtrerade arrayen
     sendJson($filteredById);
     exit();  
 }
