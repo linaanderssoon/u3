@@ -5,6 +5,23 @@ error_reporting(-1);
 $requestMethod = $_SERVER["REQUEST_METHOD"];
 $contentType = $_SERVER["CONTENT_TYPE"];
 
+if ($method === "OPTIONS") {
+    header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Headers: *");
+    exit();
+} 
+
+header("Access-Control-Allow-Origin: *");
+
+// Kontollera content-type
+if($contentType !== "application/json") {
+    sendJson([
+        "code" => 13,
+        "message" => "The API only accepts json"
+    ], 400
+    );
+}
+
 $jsonData = loadJson("database.json");
 
 //Vår array av djur eller owners

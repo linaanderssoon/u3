@@ -4,6 +4,14 @@ require_once "functions.php";
 error_reporting(-1);
 $requestMethod = $_SERVER["REQUEST_METHOD"];
 
+if ($method === "OPTIONS") {
+    header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Headers: *");
+    exit();
+} 
+
+header("Access-Control-Allow-Origin: *");
+
 $jsonData = loadJson("database.json");
 $owners = $jsonData["owners"];
 $animals = $jsonData["animals"];

@@ -1,6 +1,6 @@
 <?php
 
-function sendJson($data = "hej", $statusCode = 200) {
+function sendJson($data = "msg", $statusCode = 200) {
     header("Content-Type: application/json");
     http_response_code($statusCode);
 
@@ -23,20 +23,6 @@ function saveJson($filename, $data) {
     return true;
 }
 
-function inspect($varible) {
-    echo "<pre>";
-    var_dump($varible);
-    echo "<pre>";
-}
-
-function errorMsg($msg, $code = 400) {
-    header("Content-Type: application/json");
-    http_response_code($code);
-    $json = json_encode(["message" => "$msg"]);
-    echo $json;
-    exit();
-}
-
 function checkData($array) {
     foreach($array as $key => $value) {
         if($value == ""){
@@ -57,7 +43,6 @@ function checkLimit($array){
 }
 
 function checkIds($array){
-    
     $ids = explode(",", $_GET["ids"]);
     $filteredById = [];
     
@@ -75,8 +60,7 @@ function checkIds($array){
     // }
 
     sendJson($filteredById);
-    exit();
-    
+    exit();  
 }
 
 function getOne($array) {
@@ -134,6 +118,4 @@ function getHighestID($array) {
         
     return $highestID + 1;
 }
-
-
 ?>

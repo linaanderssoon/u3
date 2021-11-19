@@ -5,14 +5,22 @@
     $contentType = $_SERVER["CONTENT_TYPE"];
     $method = $_SERVER["REQUEST_METHOD"];
 
-    // Kontorllerar att content type är json, avsluta annars
-    if($contentType !== "application/json") {
-        header("content-Type: application/json");
-        http_response_code(400);
-        $json = json_encode(["messsage" => "Bad request"]);
-        echo $json;
+    if ($method === "OPTIONS") {
+        header("Access-Control-Allow-Origin: *");
+        header("Access-Control-Allow-Headers: *");
         exit();
-    }
+    } 
+
+    header("Access-Control-Allow-Origin: *");
+
+    // Kontollera content-type
+    if($contentType !== "application/json") {
+    sendJson([
+        "code" => 13,
+        "message" => "The API only accepts json"
+    ], 400
+    );
+}
 
     // Kontollera om request method är POST
     if($method === "POST") {
