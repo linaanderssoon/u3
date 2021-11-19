@@ -87,32 +87,18 @@
             // Kontollera så allt är ifyllt
             if(!empty($animalType) || !empty($age) || !empty($favourite_food) || !empty($owner) || !empty($name)) {
 
-                // Kontollera så att ålderna är rimlig, inte mer än 30
-                if($age < 30) {
-                    $jsonData = loadJson("database.json");
+                $jsonData = loadJson("database.json");
+                $owners = $jsonData["owners"];
 
-                    // Om allt är ok, skapa nytt djur
-                    $newAnimal = [
-                        "id" => getHighestID($jsonData["animals"]),
-                        "animal" => $animalType,
-                        "name" => $name,
-                        "age" => $age,
-                        "favourite_food" => $favourite_food,
-                        "owner" => $owner
-                    ];
-                        
-                    // Pusha in nya djuret i databasen
-                    array_push($jsonData["animals"], $newAnimal);
-                    saveJson("database.json", $jsonData);
-                      
-                    // Skicka meddelande till användaren
-                    sendJson($newAnimal, 201);
+                // Kontollera att owners som skickats med existerar existerar
+                $ownerIDs = array_column($owners, "id");
 
-                } else {
-                    // Om det är en sköldpadda får den vara mer än 30år :D
-                    if ($animalType == "Turtle") {
-                        $jsonData = loadJson("database.json");
-
+                // Om den ägeren som skickats med finns
+                if(in_array($owner, $ownerIDs)) {
+                    // Kontollera så att ålderna är rimlig, inte mer än 30
+                    if($age < 30) {
+    
+                        // Om allt är ok, skapa nytt djur
                         $newAnimal = [
                             "id" => getHighestID($jsonData["animals"]),
                             "animal" => $animalType,
@@ -122,37 +108,66 @@
                             "owner" => $owner
                         ];
                             
-                        // Pusha in sköldpaddan i databasen
+                        // Pusha in nya djuret i databasen
                         array_push($jsonData["animals"], $newAnimal);
                         saveJson("database.json", $jsonData);
-                            
-                        // Skicka meddelande til användaren
+                          
+                        // Skicka meddelande till användaren
                         sendJson($newAnimal, 201);
-
+    
                     } else {
-                        sendJson([
-                            "code" => 4,
-                            "message" => "Your animal can not be this old."
-                        ], 400);
+                        // Om det är en sköldpadda får den vara mer än 30år :D
+                        if ($animalType == "Turtle") {
+                            $jsonData = loadJson("database.json");
+    
+                            $newAnimal = [
+                                "id" => getHighestID($jsonData["animals"]),
+                                "animal" => $animalType,
+                                "name" => $name,
+                                "age" => $age,
+                                "favourite_food" => $favourite_food,
+                                "owner" => $owner
+                            ];
+                                
+                            // Pusha in sköldpaddan i databasen
+                            array_push($jsonData["animals"], $newAnimal);
+                            saveJson("database.json", $jsonData);
+                                
+                            // Skicka meddelande til användaren
+                            sendJson($newAnimal, 201);
+    
+                        } else {
+                            sendJson([
+                                "code" => 4,
+                                "message" => "Your animal can not be this old."
+                            ], 400);
+                        }
                     }
-                }
 
+                } else {
+                    sendJson([
+                        "code" => 5,
+                        "message" => "This owner does not exist."
+                    ], 400);
+                }
+                
             } else {
                 sendJson([
-                    "code" => 5,
+                    "code" => 6,
                     "message" => "You have to fill all the fields."
                 ], 400);
             }
+
         } else {
             sendJson([
-                "code" => 6,
+                "code" => 7,
                 "message" => "You missed somtehing."
             ], 400);
         }
 
     } else {
         sendJson([
-            "code" => 7,
+            "code" => 8,
             "message" => "Method not allowed."
         ], 405 );
     }    
