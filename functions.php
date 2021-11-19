@@ -127,12 +127,12 @@ function getHighestID($array) {
     $highestID = 0;
 
     foreach($array as $item) {
-        if ($item["id"] > $highestId) {
-            $highestId = $item["id"];
+        if ($item["id"] > $highestID) {
+            $highestID = $item["id"];
         }
     }
         
-    return $highestId + 1;
+    return $highestID + 1;
 }
 
 
