@@ -123,5 +123,17 @@ function getOwnerObj($ownerID){
     return $ownerObj;
 }
 
+function getHighestID($array) {
+    $highestID = 0;
+
+    foreach($array as $item) {
+        if ($item["id"] > $highestId) {
+            $highestId = $item["id"];
+        }
+    }
+        
+    return $highestId + 1;
+}
+
 
 ?>

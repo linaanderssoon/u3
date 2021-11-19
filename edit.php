@@ -20,14 +20,12 @@ $found = false;
 $foundOwner = null;
 $foundAnimal = null;
 
-
 if($requestMethod === "PATCH") {    
     if(!isset($requestData["id"])) {
         sendJson([
-            "code" => 2,
+            "code" => 8,
             "message" => "Missing 'id' of request body"
-        ], 400
-        );
+        ], 400 );
     }
 
     checkData($requestData);
@@ -109,7 +107,7 @@ if($requestMethod === "PATCH") {
     if ($found === false) {
         sendJson(
             [
-                "code" => 5,
+                "code" => 9,
                 "message" => "The owner or animal by `id` does not exist"
             ],404
         );
@@ -127,7 +125,7 @@ if($requestMethod === "PATCH") {
 } else {
     sendJson(
         [
-            "code" => 6,
+            "code" => 10,
             "message" => "The method is not allowed"
         ],405
     );

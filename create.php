@@ -1,11 +1,11 @@
-<!-- POST -->
-
 <?php
     require_once "functions.php";
+    error_reporting(-1);
 
     $contentType = $_SERVER["CONTENT_TYPE"];
     $method = $_SERVER["REQUEST_METHOD"];
 
+    // Kontorllerar att content type är json, avsluta annars
     if($contentType !== "application/json") {
         header("content-Type: application/json");
         http_response_code(400);
@@ -14,11 +14,12 @@
         exit();
     }
 
+    // Kontollera om request method är POST
     if($method === "POST") {
         $data = file_get_contents("php://input");
         $requestData = json_decode($data, true);
 
-        // Kolla om variablerna för att ska ny OWNER är satta
+        // Om vaiablerna för OWNER är satta ska en ny OWNER skapas
         if(isset($requestData["first_name"], $requestData["last_name"], $requestData["email"], $requestData["password"])) {
 
             $firstName = $requestData["first_name"];
@@ -34,71 +35,65 @@
                     
                     // Kolla om det är em giltig email
                     if(strpos($email, "@") !== false) {
-                        $jsonData = loadJson("database.json");
-                        $highestId = 0;
-                
-                        foreach($jsonData["owners"] as $owner) {
-                            if ($owner["id"] > $highestId) {
-                                $highestId = $owner["id"];
-                            }
-                        }
-                            
-                        $newID = $highestId + 1;
 
+                        // Om vi kommit hit är allt okej, 
+                        // skapa ny owner
+                        $jsonData = loadJson("database.json");
+                            
                         $newOwner = [
-                            "id" => $newID,
+                            "id" => getHighestID($jsonData["owners"]),
                             "first_name" => $firstName,
                             "last_name" => $lastName,
                             "email" => $email,
                             "password" => $password
                         ];
                             
+                        // Pusha in ny använare i databasen
                         array_push($jsonData["owners"], $newOwner);
                         saveJson("database.json", $jsonData);
                             
+                        // Skicka meddelande till användaren
                         sendJson($newOwner, 201);
 
                     } else {
-                        errorMsg("Invalid email");
+                        sendJson([
+                            "code" => 1,
+                            "message" => "Invalid email."
+                        ], 400);
                     }
-
+                
                 } else {
-                    errorMsg("Your first name is too short");
+                    sendJson([
+                        "code" => 2,
+                        "message" => "Your first name is too short."
+                    ], 400);
                 }
             } else {
-                errorMsg("Something is empty");
+                sendJson([
+                    "code" => 3,
+                    "message" => "You have to fill all the fields."
+                ], 400);
             }
-
-            
-
         } 
 
-        // Kolla om variablerna för att skapa en ny ANIMAL är satt
+        // Om variablerna för ANIMAL är satta, skapa ANIMAL
         if(isset($requestData["animal"], $requestData["age"], $requestData["favourite_food"], $requestData["owner"], $requestData["name"])) {
-            
             $animalType = $requestData["animal"];
             $age = $requestData["age"];
             $favourite_food = $requestData["favourite_food"];
             $owner = $requestData["owner"];
             $name = $requestData["name"];
 
-            if(!empty($animalType) || !empty($age) || !empty($favourite_food) || !empty($owner) || !empty($name)){
+            // Kontollera så allt är ifyllt
+            if(!empty($animalType) || !empty($age) || !empty($favourite_food) || !empty($owner) || !empty($name)) {
 
+                // Kontollera så att ålderna är rimlig, inte mer än 30
                 if($age < 30) {
-
                     $jsonData = loadJson("database.json");
-                    $highestId = 0;
-            
-                    foreach($jsonData["animals"] as $animal) {
-                        if ($animal["id"] > $highestId) {
-                            $highestId = $animal["id"];
-                        }
-                    }
 
-                    $newID = $highestId + 1;
-
+                    // Om allt är ok, skapa nytt djur
                     $newAnimal = [
-                        "id" => $newID,
+                        "id" => getHighestID($jsonData["animals"]),
                         "animal" => $animalType,
                         "name" => $name,
                         "age" => $age,
@@ -106,27 +101,20 @@
                         "owner" => $owner
                     ];
                         
+                    // Pusha in nya djuret i databasen
                     array_push($jsonData["animals"], $newAnimal);
                     saveJson("database.json", $jsonData);
-                        
+                      
+                    // Skicka meddelande till användaren
                     sendJson($newAnimal, 201);
 
                 } else {
-                    if ($animalType == "Turtle"){
-
+                    // Om det är en sköldpadda får den vara mer än 30år :D
+                    if ($animalType == "Turtle") {
                         $jsonData = loadJson("database.json");
-                        $highestId = 0;
-                
-                        foreach($jsonData["animals"] as $animal) {
-                            if ($animal["id"] > $highestId) {
-                                $highestId = $animal["id"];
-                            }
-                        }
-    
-                        $newID = $highestId + 1;
 
                         $newAnimal = [
-                            "id" => $newID,
+                            "id" => getHighestID($jsonData["animals"]),
                             "animal" => $animalType,
                             "name" => $name,
                             "age" => $age,
@@ -134,24 +122,38 @@
                             "owner" => $owner
                         ];
                             
+                        // Pusha in sköldpaddan i databasen
                         array_push($jsonData["animals"], $newAnimal);
                         saveJson("database.json", $jsonData);
                             
+                        // Skicka meddelande til användaren
                         sendJson($newAnimal, 201);
 
                     } else {
-                        errorMsg("Your animal can not be this old");
+                        sendJson([
+                            "code" => 4,
+                            "message" => "Your animal can not be this old."
+                        ], 400);
                     }
                 }
 
             } else {
-                errorMsg("Something is empty");
+                sendJson([
+                    "code" => 5,
+                    "message" => "You have to fill all the fields."
+                ], 400);
             }
         } else {
-            errorMsg("You missed something");
+            sendJson([
+                "code" => 6,
+                "message" => "You missed somtehing."
+            ], 400);
         }
 
     } else {
-        errorMsg("Method not allowed", 405);
+        sendJson([
+            "code" => 7,
+            "message" => "Method not allowed."
+        ], 405 );
     }    
 ?>
