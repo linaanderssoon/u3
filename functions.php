@@ -41,7 +41,7 @@ function checkData($array) {
     foreach($array as $key => $value) {
         if($value == ""){
             sendJson([
-                "code" => 1,
+                "code" => 12,
                 "message" => "$key is empty"
             ], 404
             );
