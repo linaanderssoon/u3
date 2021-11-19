@@ -1,5 +1,6 @@
 <?php
 
+// Tar emot data och skickar ut som json till användaren
 function sendJson($data = "msg", $statusCode = 200) {
     header("Content-Type: application/json");
     http_response_code($statusCode);
@@ -8,6 +9,7 @@ function sendJson($data = "msg", $statusCode = 200) {
     exit();
 }
 
+// Hämtar data
 function loadJson($filename) {
     if(file_exists($filename)){
         return json_decode(file_get_contents($filename), true);
@@ -16,6 +18,7 @@ function loadJson($filename) {
     }
 }
 
+// Sparar till databas
 function saveJson($filename, $data) {
     $json = json_encode($data, JSON_PRETTY_PRINT);
     file_put_contents($filename, $json);
@@ -23,6 +26,7 @@ function saveJson($filename, $data) {
     return true;
 }
 
+// Kollar om någon nyckel som skcikats med är tom
 function checkData($array) {
     foreach($array as $key => $value) {
         if($value == ""){
@@ -35,6 +39,7 @@ function checkData($array) {
     }
 }
 
+// Kolla om limit finns, och hämtar isf så många
 function checkLimit($array){
     $limit = $_GET["limit"];
     $chopped = array_slice($array, 0, $limit);
@@ -42,9 +47,10 @@ function checkLimit($array){
     includes($chopped);
     
     return $chopped;
-    // exit();
 }
 
+
+// Hämtar om det är med än 1 agivet id
 function checkIds($array){
     //Hämtar idn som skickats med GET
     $ids = explode(",", $_GET["ids"]);
@@ -67,6 +73,7 @@ function checkIds($array){
     exit();  
 }
 
+// Hämtar en baserat på id
 function getOne($array) {
     $id = $_GET["id"];
 
@@ -96,6 +103,7 @@ function getOne($array) {
     }
 }
 
+// Filterar efter en angiven nyckel
 function filterStuff($array, $key, $value) {
     $filteredArray = [];
 
@@ -111,11 +119,11 @@ function filterStuff($array, $key, $value) {
         sendJson(checkLimit($filteredArray));   
     }
 
-    
-
     sendJson($filteredArray);
 }
 
+
+// Hämtar en ägar obejtk baserat på ett id
 function getOwnerObj($ownerID){
     $jsonData = loadJson("database.json");
     $owners = $jsonData["owners"];
@@ -129,6 +137,7 @@ function getOwnerObj($ownerID){
     return $ownerObj;
 }
 
+// Skickar med ägar objet om includes finns
 function includes($array) {
     if(isset($_GET["includes"])) {
         foreach($array as $index => $item) {
@@ -139,6 +148,8 @@ function includes($array) {
     return $array;
 }
 
+
+// SKapar nytt id
 function getHighestID($array) {
     $highestID = 0;
 
